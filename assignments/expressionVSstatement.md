@@ -8,7 +8,7 @@
 function add(var a = 0,var b = 0){
   return a + b;
 }
-add(21, 23);
+add(21, 23);  //invalid var not allowed
 ```
 
 2. What is the output or error of the code below.
@@ -17,7 +17,7 @@ add(21, 23);
 function add(a = 0; b = 0) {
   return a + b;
 }
-add(21, 23);
+add(21, 23); //invalid (a=0,b=0)
 ```
 
 3. What is the output or error of the code below.
@@ -26,7 +26,7 @@ add(21, 23);
 function add(a = 0, b = 0) {
   return a + b;
 }
-add(21, 23);
+add(21, 23); //44
 ```
 
 4. What is the output or error of the code below.
@@ -35,7 +35,7 @@ add(21, 23);
 function add(a = 0, b) {
   return a + b;
 }
-add(21);
+add(21);  //NaN b is not a number
 ```
 
 5. What is the output or error of the code below.
@@ -44,7 +44,7 @@ add(21);
 function add(a = 0, b = 0) {
   return a + b;
 }
-add(undefined, 21);
+add(undefined, 21); //21
 ```
 
 6. What is the output or error of the code below.
@@ -57,7 +57,7 @@ function knowWhy(value) {
     return "No"
   }
 }
-knowWhy(211);
+knowWhy(211); // return always contain a statement not a condition.
 ```
 
 7. What is the output or error of the code below.
@@ -68,9 +68,9 @@ function knowWhy(value) {
     return "Yes"
   } else {
     return "No"
-  }
+  }   
 }
-knowWhy(21);
+knowWhy(21); // return always contain a statement not a condition.
 ```
 
 8. What is the output or error of the code below.
@@ -79,5 +79,5 @@ knowWhy(21);
 function isItIf(ifElse) {
   return ifElse;
 }
-isItIf(if(true){console.log('Testing')});
+isItIf(if(true){console.log('Testing')}); //invalid if not allowed
 ```
